@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+#relationships
 belongs_to :contact
 has_many :reminders
 has_many :messages
@@ -11,5 +12,12 @@ has_many :contacts, through: :messages
 has_many :contacts, through: :reminders
 
 #has devise options above, more devise statements need to be added in various files based on what guide says
+
+#validations
+
+#methods
+#default active
+
+#scopes
 
 end
