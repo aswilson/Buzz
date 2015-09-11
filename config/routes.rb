@@ -1,4 +1,5 @@
 Buzz::Application.routes.draw do
+  devise_for :users
   resources :reminders
 
   resources :messages
