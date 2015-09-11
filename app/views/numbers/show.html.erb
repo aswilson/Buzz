@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @number.id %>
+</p>
+
+<p>
+  <strong>Full number:</strong>
+  <%= @number.full_number %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @number.type %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @number.active %>
+</p>
+
+<%= link_to 'Edit', edit_number_path(@number) %> |
+<%= link_to 'Back', numbers_path %>

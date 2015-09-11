@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @message.id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @message.user_id %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @message.contact_id %>
+</p>
+
+<p>
+  <strong>When:</strong>
+  <%= @message.when %>
+</p>
+
+<p>
+  <strong>Contents:</strong>
+  <%= @message.contents %>
+</p>
+
+<p>
+  <strong>Pending:</strong>
+  <%= @message.pending %>
+</p>
+
+<p>
+  <strong>Sent:</strong>
+  <%= @message.sent %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>

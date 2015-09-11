@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @contact.id %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @contact.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @contact.last_name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @contact.image %>
+</p>
+
+<p>
+  <strong>Available:</strong>
+  <%= @contact.available %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @contact.status %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @contact.location %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @contact.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @contact.longitude %>
+</p>
+
+<p>
+  <strong>Time zone:</strong>
+  <%= @contact.time_zone %>
+</p>
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>

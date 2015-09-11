@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  user_id: 1
+  contact_id: 1
+  when: 2015-09-11
+  pending: false
+  received: false
+
+two:
+  id: 1
+  user_id: 1
+  contact_id: 1
+  when: 2015-09-11
+  pending: false
+  received: false

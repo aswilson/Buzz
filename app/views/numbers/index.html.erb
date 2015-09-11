@@ -1,0 +1,33 @@
+<h1>Listing numbers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Full number</th>
+      <th>Type</th>
+      <th>Active</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @numbers.each do |number| %>
+      <tr>
+        <td><%= number.id %></td>
+        <td><%= number.full_number %></td>
+        <td><%= number.type %></td>
+        <td><%= number.active %></td>
+        <td><%= link_to 'Show', number %></td>
+        <td><%= link_to 'Edit', edit_number_path(number) %></td>
+        <td><%= link_to 'Destroy', number, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Number', new_number_path %>
